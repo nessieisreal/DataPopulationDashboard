@@ -1,0 +1,214 @@
+nav {
+	  background-color: #ffffff;
+	  border-bottom: solid 2px #d4d4d4;
+	  width: 100%;
+
+	  @extend %clearfix;
+}
+
+nav .logo-container .logo {
+	  display: block;
+	  width: 116px;
+	  height: 50px;
+	  padding: 1px 0 0 0;
+}
+
+nav .logo-container .logo img {
+	  max-width: 100%;
+}
+
+nav .logo-container {
+	  -moz-box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+	  width: 25%;
+	  float: left;
+	  padding: 10px 0 5px 0;
+	  display: inline-block;
+	  vertical-align: middle;
+}
+
+nav .main-nav {
+	  -moz-box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+	  width: 50%;
+	  float: right;
+	  display: inline-block;
+	  text-align: right;
+	  margin: 0px 1% 0px 0px;
+}
+
+nav .main-nav .nav-public ul {
+	  margin: .5em 0;
+}
+
+nav .main-nav li.nav-profile-container {
+	  margin-top: 0;
+	  margin-right: 0;
+	  width: auto;
+	  height: auto;
+	  cursor: pointer;
+}
+
+nav .main-nav li {
+	  display: inline-block;
+	  margin: 0 10px 0 0;
+	  vertical-align: middle;
+}
+
+nav .main-nav li.nav-profile-container .nav-profile {
+	  margin-bottom: 0;
+}
+
+nav .main-nav li.nav-profile-container .nav-profile > .user {
+	  width: auto;
+	  height: auto;
+	  margin-top: 10px;
+
+	  @media screen and (max-width: $phone-max-width) {
+		    margin-right: 0;
+	  }
+}
+
+nav .main-nav li.nav-profile-container .nav-profile > .user .profile-icon {
+	  background-size: cover;
+	  height: 45px;
+	  width: 45px;
+	  border-radius: 25px;
+	  margin-bottom: 10px;
+	  float: right;
+}
+
+nav .main-nav li.nav-profile-container .nav-profile .nav-list {
+	  width: auto;
+	  margin-right: 0;
+}
+
+.nav-list a span {
+	  @media screen and (max-width: $phone-max-width) {
+		    display: none;
+	  }
+}
+
+.nav-list a ng-md-icon {
+	  fill: black;
+
+	  &hover {
+		    fill: $brand-blue;
+	  }
+}
+
+nav #name_drop {
+	  position: absolute;
+	  z-index: 1;
+	  right: 13px;
+	  top: 65px;
+	  background: #ffffff;
+	  border: 2px solid #c2c0c5;
+	  border-top: none;
+	  border-radius: 0 0 4px 4px;
+	  padding: 0 27px 10px 0;
+	  width: 190px;
+	  text-align: right;
+	  font-size: 0.8em;
+	  opacity: 0;
+	  overflow: hidden;
+	  height: 0;
+	  -moz-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	  -o-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	  -webkit-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	  -moz-transform: scaleY(0);
+	  -ms-transform: scaleY(0);
+	  -webkit-transform: scaleY(0);
+	  transform: scaleY(0);
+	  -moz-transform-origin: center top;
+	  -ms-transform-origin: center top;
+	  -webkit-transform-origin: center top;
+	  transform-origin: center top;
+}
+
+nav #name_drop.headerslidedown {
+	  opacity: 1;
+	  height: auto;
+	  -moz-transform: scaleY(1);
+	  -ms-transform: scaleY(1);
+	  -webkit-transform: scaleY(1);
+	  transform: scaleY(1);
+}
+
+nav #name_drop li {
+	  line-height: 32px;
+	  list-style: none;
+	  font-size: 14px;
+}
+
+nav #name_drop li a {
+	  color: #000;
+
+	  &:hover {
+		    color: $brand-blue-light;
+	  }
+}
+
+nav .user-name {
+	  color: black;
+	  font-size: 16px;
+
+	  &:hover {
+		    color: $brand-blue-light;
+	  }
+}
+
+nav ng-md-icon {
+	  margin-top: -2px;
+}
+
+nav #expand-more {
+	  height: auto;
+	  width: auto;
+	  -webkit-transition: all cubic-bezier(.175,.885,.32,1.275) .3s;
+}
+
+nav #expand-more.open {
+	  -webkit-transform: rotate(-180deg);
+	  -moz-transform: rotate(-180deg);
+}
+
+nav .alert {
+	  padding: 7px;
+}
+
+nav ul {
+	  list-style: disc;
+	  margin: 0 0 1.2rem;
+}
+
+nav ul li {
+	  margin-left: 2.4rem;
+	  line-height: 2.7rem;
+}
+
+nav div {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font: inherit;
+	  font-size: 100%;
+	  vertical-align: baseline;
+}
+
+nav .container {
+	  margin: auto;
+	  position: relative;
+	  max-width: 1120px;
+
+	  @extend %clearfix;
+
+	  @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+		    max-width: 900px;
+		    padding: 0px;
+	  }
+}
+

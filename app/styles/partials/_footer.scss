@@ -1,0 +1,13 @@
+.footer {
+	  border-top: 1px solid $default-gray-dark;
+	  padding: 1em;
+
+	  @media screen and (max-width: $phone-max-width) {
+		    padding-bottom: 4em;
+	  }
+}
+
+.footer .container {
+	  text-align: center;
+	  max-width: 900px;
+}

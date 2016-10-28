@@ -1,0 +1,52 @@
+/* responsive breakpoints */
+$desktop-min-width: 961px;
+$tablet-max-width:  960px;
+$tablet-min-width:  641px;
+$phone-max-width:   640px;
+
+
+/*------------------------------------*\
+    Colors
+\*------------------------------------*/
+
+$black: #021829;
+
+$brand-blue: #004977;
+$brand-blue-dark: #003362;
+$brand-blue-light: #336D92;
+
+$brand-red: #D03027;
+
+// Accents
+$accent-blue: #018BBB;
+$accent-blue-dark: #0D74AF;
+$accent-blue-light: #019ED5;
+$accent-blue-lighter: #97D6ED;
+$accent-blue-lightest: #E2F4FE;
+
+$accent-green: #0EA218;
+$accent-green-dark: #128020;
+$accent-green-light: #0DAD0C;
+$accent-green-lighter: #10BD1B;
+$accent-green-lightest: #3FC848;
+
+$accent-yellow: #FFDC24;
+$accent-yellow-dark: #F8CC01;
+$accent-yellow-light: #FFE34F;
+
+// Neutrals
+$default-gray: #DCD8DB;
+$default-gray-dark: #CFCCCF;
+$default-gray-light: #E8E4E7;
+$default-gray-lighter: #F4F0F3;
+$default-gray-lightest: #FAF8F9;
+
+$default-charcoal: #273B49;
+$default-charcoal-dark: #011728;
+$default-charcoal-light: #687680;
+$default-charcoal-lighter: #AEB5BB;
+$default-charcoal-lightest: #C9CED2;
+
+//Background colors (for the body mostly)
+$background: #F2F2F3;
+$background-light: #F9F9F9;

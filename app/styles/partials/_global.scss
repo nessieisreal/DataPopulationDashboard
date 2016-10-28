@@ -1,0 +1,191 @@
+body, html {
+	  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif !important;
+	  width: 100vw;
+}
+
+label {
+	  font-size: 16px;
+	  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif !important;
+}
+
+button {
+	  outline: none;
+	  font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif !important;
+	  font-weight: normal;
+	  letter-spacing: 1px;
+}
+
+ul {
+	  list-style-type: none;
+	  padding: 0;
+	  margin: 0;
+
+	  @extend %clearfix;
+}
+
+form {
+	  @extend %clearfix;
+}
+
+input,
+textarea {
+	  font-size: 16px;
+}
+
+h4 {
+	  @media screen and (max-width: $phone-max-width) {
+		    font-size: 22px;
+	  }
+}
+
+select {
+	  height: 2.625em; //to match the input fields
+}
+
+.form-select-span select {
+	  @media screen and (max-width: $phone-max-width) {
+		    width: 100%;
+	  }
+}
+
+img.error {
+	  width: 20px;
+	  margin-right: 5px;
+	  float: left;
+}
+
+p {
+	  font-size: 16px;
+	  margin: 16px 0 16px;
+
+	  .error {
+		    color: $brand-red;
+	  }
+}
+
+a {
+	  font-size: 16px;
+	  cursor: pointer;
+
+	  &:hover,
+	  &:active,
+	  &:focus {
+		    text-decoration: none;
+		    color: $brand-blue;
+	  }
+}
+
+hr {
+	  border-top: 1px solid $default-gray;
+}
+
+/**
+ * App-wide Styles
+ */
+
+.righty {
+	  float: right;
+}
+
+.lefty {
+	  float: left;
+}
+
+.in-half {
+	  width: 100%;
+
+	  .first-half {
+		    float: left;
+		    width: 49%;
+		    margin-right: 2%;
+
+		    @media screen and (max-width: $phone-max-width) {
+				float: none;
+				width: 100%;
+				margin: 0;
+		    }
+	  }
+
+	  .second-half {
+		    float: left;
+		    width: 49%;
+
+		    @media screen and (max-width: $phone-max-width) {
+				float: none;
+				width: 100%;
+				margin: 0;
+		    }
+	  }
+}
+
+.align-center {
+	  text-align: center;
+}
+
+.form-group {
+	  @extend %clearfix;
+}
+
+.form-select-span select {
+	  font-size: 16px;
+	  height: 42px;
+}
+
+.container {
+	  margin: auto;
+	  position: relative;
+	  padding: 0;
+	  max-width: 1120px;
+	  width: 94%;
+	  -webkit-transition: all ease-out 300ms;
+
+	  @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+		    max-width: 800px;
+	  }
+
+	  @media screen and (max-width: $phone-max-width) {
+		    max-width: 600px;
+	  }
+
+	  @extend %clearfix;
+}
+
+.container.full {
+	  position: relative;
+	  width: 100%;
+	  -webkit-transition: all ease-out 300ms;
+}
+
+.clickable {
+	  cursor: pointer;
+}
+
+.fs-small-label {
+	  font-size: 14px;
+}
+
+.fs-md-label {
+	  font-size: 16px;
+}
+
+.fs-large-label {
+	  font-size: 18px;
+}
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex: 1;
+}
+
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
